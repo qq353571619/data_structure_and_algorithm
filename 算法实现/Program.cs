@@ -15,9 +15,21 @@ namespace 算法实现
             //TestMoShuShi();
             //TestReverse();
             //TestSiZe();
-            TestAXin();
+            //TestAXin();
             //TestAandB();
+            TestInsertSort();
             Console.ReadKey();
+        }
+
+        static void TestInsertSort()
+        {
+            int[] datas = { 5, 6, 9, 1, 100,3, 7, 0, 2, 4 };
+            InsertSort insertSort = new InsertSort();
+            insertSort.Sort(datas);
+            foreach (var data in datas)
+            {
+                Console.Write(data + " ");
+            }
         }
 
         //A和B加法测试
