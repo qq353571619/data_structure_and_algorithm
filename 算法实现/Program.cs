@@ -17,8 +17,20 @@ namespace 算法实现
             //TestSiZe();
             //TestAXin();
             //TestAandB();
-            TestInsertSort();
+            //TestInsertSort();
+            TestShellSort();
             Console.ReadKey();
+        }
+
+        static void TestShellSort()
+        {
+            int[] datas = { 5, 6, 9, 1, 100, 3, 7, 0, 2 };
+            ShellSort shellSort = new ShellSort();
+            shellSort.Sort(datas);
+            foreach (var data in datas)
+            {
+                Console.Write(data + " ");
+            }
         }
 
         static void TestInsertSort()
